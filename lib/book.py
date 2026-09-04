@@ -2,7 +2,6 @@
 
 class Book:
     def __init__(self, title, page_count):
-
         self.title = title
         self.page_count = page_count
 
@@ -12,12 +11,10 @@ class Book:
 
     @page_count.setter
     def page_count(self, new_count):
-    
         if type(new_count) == int:
             self._page_count = new_count
         else:
-            print("page_count must be an int")
+            print("page_count must be an integer")
 
     def turn_page(self):
-        print("Wow you read super quick!")
-        
+        print("Flipping the page...wow, you read fast!")
